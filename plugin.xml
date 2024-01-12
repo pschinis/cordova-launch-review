@@ -9,8 +9,8 @@
     <description>Cordova/Phonegap plugin for iOS and Android to assist in leaving user reviews/ratings in the App Stores.</description>
     <author>Dave Alden</author>
 
-    <repo>https://github.com/dpa99c/cordova-launch-review.git</repo>
-    <issue>https://github.com/dpa99c/cordova-launch-review/issues</issue>
+    <repo>https://github.com/pschinis/cordova-launch-review.git</repo>
+    <issue>https://github.com/pschinis/cordova-launch-review/issues</issue>
 
     <keywords>ecosystem:cordova,cordova,phonegap,ios,android,review,rating</keywords>
 
@@ -40,8 +40,8 @@
 
     <!-- android -->
     <platform name="android">
-        <preference name="ANDROID_PLAY_SERVICES_CORE_VERSION" default="1.8.0" />
-        <framework src="com.google.android.play:core:$ANDROID_PLAY_SERVICES_CORE_VERSION" />
+        <preference name="ANDROID_PLAY_SERVICES_REVIEW_VERSION" default="2.0.1" />
+        <framework src="com.google.android.play:review:$ANDROID_PLAY_SERVICES_REVIEW_VERSION" />
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="LaunchReview">
